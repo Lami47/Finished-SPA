@@ -2,15 +2,20 @@ import Menu from "../menu";
 import React from "react";
 import './Home.css';
 import './About.css';
+import Counter from '../Components/Calculator';
 
 function DisplayMenu() {
     //creates menu items in html
+    const total = 0
     const menuItems = Menu.map((items) => {
         return(
         <div>
             <h3 className="heading">{items.name}</h3>
             <div>
                     <img id="image" src={items.src} alt="Afk atm"></img>
+            </div>
+            <div>
+                <Counter />
             </div>
         </div>
         );
