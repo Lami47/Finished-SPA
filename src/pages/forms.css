@@ -1,0 +1,18 @@
+form{
+    text-align: center;
+    font-size: 2rem;
+    justify-content: space-between;
+}
+input{
+    width: 10rem;
+    height: 2rem;  
+    text-align: center;
+}
+button{
+    margin-top: 1rem;
+    color: white;
+    background-color: rgb(67, 67, 250);
+    font-size: 1.5rem;
+    border-radius: 2rem;
+    padding: 0.8rem;
+}

@@ -1,0 +1,64 @@
+.NavBar{
+    display: grid;
+    grid-template-columns: 55% 40%;
+    border: 1px solid black;
+    height: 4rem;
+    background-color: black;
+}
+
+nav{
+    grid-column: 2;
+    height: 2rem;
+    display: grid;
+    grid-template-columns: 18% 18% 28% 18% 20%;
+    font-size: 1rem;
+    justify-content: center;
+    align-self: center;
+}
+nav a{
+    text-decoration: none;
+    color: white;
+    text-align: center;
+}
+
+nav a:hover{
+    color: black;
+    background-color: white;
+    text-align: center;
+}
+
+#home{
+    grid-column: 1;
+    border: 1px solid black;
+    border-radius: 1rem;
+    padding: 0.5rem;
+    width: 50%;
+}
+#about{
+    grid-column: 2;
+    border: 1px solid black;
+    border-radius: 1rem;
+    padding: 0.5rem;
+    width: 50%;
+}
+#userprofile{
+    grid-column: 3;
+    border: 1px solid black;
+    border-radius: 1rem;
+    padding: 0.5rem;
+    width: 70%;
+}
+#login{
+    grid-column: 4;
+    border: 1px solid black;
+    border-radius: 1rem;
+    padding: 0.5rem;
+    width: 50%;
+}
+#registration{
+    grid-column: 5;
+    border: 1px solid black;
+    border-radius: 1rem;
+    padding: 0.5rem;
+    width: 70%;
+}
