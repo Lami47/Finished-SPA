@@ -6,7 +6,6 @@ import Counter from '../Components/Calculator';
 
 function DisplayMenu() {
     //creates menu items in html
-    const total = 0
     const menuItems = Menu.map((items) => {
         return(
         <div>
@@ -14,7 +13,7 @@ function DisplayMenu() {
             <div>
                     <img id="image" src={items.src} alt="Afk atm"></img>
             </div>
-            <div>
+            <div className="box">
                 <Counter />
             </div>
         </div>

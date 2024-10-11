@@ -1,6 +1,7 @@
 import React from "react";
 import './About.css';
 import userData from "../usersData";
+
 function About() {
     //displays
         return (
