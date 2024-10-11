@@ -13,7 +13,7 @@ function DisplayMenu() {
             <div>
                     <img id="image" src={items.src} alt="Afk atm"></img>
             </div>
-            <div className="box">
+            <div className="">
                 <Counter />
             </div>
         </div>

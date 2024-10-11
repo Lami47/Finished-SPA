@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import Menu from '../menu';
+// import Menu from '../menu';
 
 const Counter = () => {
   const [count, setCount] = useState(0);
@@ -14,8 +14,8 @@ const Counter = () => {
     }
   };
   const initial = 0
-  const menu = Menu.id
-  const total = count * menu.price
+  // const menu = Menu.id
+  // const total = count * menu.price
 
   return (
     <>
@@ -31,9 +31,9 @@ const Counter = () => {
       <div>
         Platter's: {initial}
       </div>
-      <div>
+      {/* <div>
         Total: {total}
-      </div>
+      </div> */}
     </>
   );
 };
