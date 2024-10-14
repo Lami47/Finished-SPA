@@ -22,11 +22,13 @@ function DisplayMenu() {
     //displays
         return (
         <body>
-            <h1 className="heading">
-                Menu of FishyFoods
-            </h1>
-            <div id="menu">
-                {menuItems}
+            <div className="grid2">
+                <h2 className="heading">
+                    Menu of FishyFoods
+                </h2>
+                <div id="menu">
+                    {menuItems}
+                </div>
             </div>
         </body>
         );

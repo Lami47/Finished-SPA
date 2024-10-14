@@ -1,8 +1,12 @@
 import React, { useState } from 'react';
 // import Menu from '../menu';
+import './Calculator.css'
 
 const Counter = () => {
   const [count, setCount] = useState(0);
+  const reset = () => {
+    setCount(count * 0);
+  };
 
   const increment = () => {
     setCount(count + 1);
@@ -13,23 +17,34 @@ const Counter = () => {
     setCount(count - 1);
     }
   };
-  const initial = 0
+  // const cost = count * price
   // const menu = Menu.id
   // const total = count * menu.price
 
   return (
     <>
-      <div className='grid1'>
-        <button onClick={increment} style={{ margin: '10px', padding: '10px' }}>
-          Increment
+      <div className='calcGrid1'>
+        <button className='item1' onClick={reset} style={{ margin: '10px', padding: '10px' }}>
+          Reset
         </button>
-        <h1> Platter: {count}</h1>
-        <button onClick={decrement} style={{ margin: '10px', padding: '10px' }}>
-          Decrement
+        <button className='item2' onClick={decrement} style={{ margin: '10px', padding: '10px' }}>
+          -1
+        </button>
+        <button className='item3' onClick={increment} style={{ margin: '10px', padding: '10px' }}>
+          +1
         </button>
       </div>
       <div>
-        Platter's: {initial}
+      <h2><em>Total Platters: </em> {count}</h2>
+      {/* <h1> Total cost: {cost}</h1> */}
+      <div className='calcGrid2'>
+        <div className='grid2-item1'>
+          <button>Save</button>
+        </div>
+        <div className='grid2-item2'>
+          <button> Add to cart</button>
+        </div>      
+      </div> 
       </div>
       {/* <div>
         Total: {total}

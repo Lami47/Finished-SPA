@@ -1,6 +1,6 @@
 import React from 'react';
 import './About.css';
-import './forms.css'
+import './forms.css';
 import userData from '../usersData';
 import { useState} from 'react';
 import { useNavigate } from 'react-router-dom';
@@ -15,16 +15,16 @@ export const Login = () => {
     const handleSubmit = (e) => {
       e.preventDefault();
       const user = userData.find(
-        (u) => u.name === username && u.surname === password
+        (u) => u.username === username && u.password === password
       );
-   
+
       if (user) {
         setSuccess(true);
         setError('');
         //to hold state till loging out
         localStorage.setItem('username', username);
         // Navigate to the WelcomePage with the username
-        navigate('/home', { state: { username } });
+        navigate('/', { state: { username } });
         // Handle successful login
       } else {
         setSuccess(false);
@@ -33,8 +33,8 @@ export const Login = () => {
     };
 
     return (
-        <div>
-          <h3 className="heading">Sign In</h3>
+        <div className='containForm'>
+          <h1>Sign In</h1>
           <form onSubmit={handleSubmit}>
             <div>
               <label>Username:</label>
@@ -56,7 +56,7 @@ export const Login = () => {
             </div>
             {error && <p style={{ color: 'red' }}>{error}</p>}
             {success && <p style={{ color: 'green' }}>Login successful!</p>}
-            <button type="submit">Sign In</button>
+            <button className='submitBtn' type="submit">Sign In</button>
           </form>
         </div>
       );

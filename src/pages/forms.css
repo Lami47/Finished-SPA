@@ -8,11 +8,36 @@ input{
     height: 2rem;  
     text-align: center;
 }
-button{
+.submitBtn{
     margin-top: 1rem;
     color: white;
     background-color: rgb(67, 67, 250);
     font-size: 1.5rem;
     border-radius: 2rem;
     padding: 0.8rem;
+    margin-bottom: 2rem;
+}
+h1{
+    text-align: center;
+    border: 1px solid black;
+    border-top-left-radius: 2rem;
+    border-top-right-radius: 2rem;
+    margin-bottom: -1px;
+    margin-left: 4rem;
+    margin-right: 4rem;
+}
+form{
+    border: 1px solid black;
+    border-bottom-left-radius: 2rem;
+    border-bottom-right-radius: 2rem;
+    margin-left: 4rem;
+    margin-right: 4rem;
+    margin-bottom: 6rem;
+}
+.containForm{
+    justify-content: center;
+    align-content: center;
+    margin: 5%;
+    margin-left: 20%;
+    margin-right: 20%;
 }
